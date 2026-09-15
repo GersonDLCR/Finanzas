@@ -1,0 +1,40 @@
+{
+  "name": "gestion-financiera",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "check:logic": "node scripts/logic-smoke.mjs",
+    "check:source": "node scripts/source-syntax-check.mjs",
+    "check:predeploy": "node scripts/predeploy-check.mjs",
+    "check:imports": "node scripts/import-contract-check.mjs",
+    "check:security": "node scripts/security-source-check.mjs",
+    "check:all": "npm run check:db && npm run check:db-rpc && npm run check:db-originations && npm run check:db-security && npm run check:db-structural && npm run check:db-relationships && npm run check:logic && npm run check:source && npm run check:ui && npm run check:imports && npm run check:security && npm run check:predeploy && npm run check:finance-regressions",
+    "check:finance-regressions": "node scripts/predeploy-finance-regressions.mjs",
+    "check:db": "node scripts/db-contract-check.mjs",
+    "check:db-rpc": "node scripts/db-rpc-contract-check.mjs",
+    "check:db-originations": "node scripts/db-originations-contract-check.mjs",
+    "check:db-security": "node scripts/db-security-boundary-check.mjs",
+    "check:db-structural": "node scripts/db-structural-test-contract-check.mjs",
+    "check:db-relationships": "node scripts/db-relationship-hardening-contract-check.mjs",
+    "check:ui": "node scripts/ui-ux-contract-check.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

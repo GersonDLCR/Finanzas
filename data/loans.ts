@@ -1,0 +1,1 @@
+export const debts = [{id:"d1",name:"Crédito vehicular · BCP",principal:145000,balance:112000,annualRate:12.8,payment:2180,frequency:"monthly",nextPayment:"2026-09-10"}, {id:"d2",name:"Préstamo personal · Interbank",principal:35000,balance:28600,annualRate:18.4,payment:780,frequency:"monthly",nextPayment:"2026-09-15"}];

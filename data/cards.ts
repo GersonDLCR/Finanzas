@@ -1,0 +1,1 @@
+export const cards = [{id:"c1",bank:"BBVA",product:"Visa Signature",last4:"4821",currency:"PEN",creditLine:12000,used:4180,closingDay:5,paymentDay:12,tea:39.99}, {id:"c2",bank:"BCP",product:"LATAM Pass",last4:"1907",currency:"PEN",creditLine:8500,used:1920,closingDay:11,paymentDay:18,tea:42.5}];
